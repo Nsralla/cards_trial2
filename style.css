@@ -1,0 +1,304 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    font-size: 16px;
+    color: black;
+  }
+  
+  
+  .entire-div{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(100px,.7fr) 2fr;
+    grid-template-rows: 100px 1fr;
+  }
+  .header{
+    color: black;
+    font-weight: bold;
+    border: 4px solid black;
+    grid-column: 1/-1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Dark text color */
+    font-weight: bold;
+    background-color: #f0f0f0; 
+    padding: 10px 20px; /* Padding for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    font-size: 20px;
+  }
+  
+  
+  .sideBar1{
+    color: black;
+    font-weight: bold; 
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    grid-column: 1/2;
+    grid-row:2/-1 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 30%;
+    background-color: #f0f0f0; 
+  
+  }
+  
+  .div1{
+    color: black; 
+    font-weight: bold; 
+    border-left: 4px solid black; 
+    border-right: 4px solid black; 
+    border-bottom: 4px solid black; 
+    text-align: center;
+    width: 100%;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   } 
+
+   .newCardBtn{
+    padding: 1.5em 2em;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: hsl(315, 4%, 56%);
+
+   }
+  .div2{
+    color: black; 
+    font-weight: bold; 
+    text-align: center;
+   } 
+  .newtask {
+    
+    color: black;
+    font-weight: bold;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    grid-column:2/-1 ;
+    grid-row: 2/-1;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    background-color: #eeebeb; 
+  
+  }
+  
+  
+  .body2{
+    color: black;
+    font-weight: bold;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    grid-column:2/-1 ;
+    grid-row: 2/-2;  
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,auto));
+    grid-template-rows: repeat(auto-fill,minmax(auto, auto));
+    row-gap: 14px;
+    column-gap: 14px;
+    padding:10px;
+    overflow-y: scroll;
+    background: linear-gradient(135deg, #ff00cc, #3333ff); /* Gradient background */
+  }
+  
+  .card-div{
+    border-radius: 10px;
+    border: 1px solid hsl(120, 3%, 55%);
+    box-shadow: 5px 5px 5px hsl(0, 0%, 70%);
+    padding: 10px;
+    background-color: #f0f0f0;
+    overflow-y: scroll;
+   
+  }
+    .headline{
+      font-weight: bold;
+  }
+  
+  .card-p{
+    font-weight: normal;
+  }
+  
+  
+  .button-9 {
+  
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 10px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 40%;
+  }
+  
+  .button-9:disabled {
+  cursor: default;
+  }
+  
+  .button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  }
+  
+  
+  .newtask .input-group1,
+  .newtask .input-group2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 10px;
+  }
+  .button-56 {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    margin: 0 auto; /* Centering horizontally */
+    padding: 0; /* Remove padding */
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    /* left: 0; */
+    width: 100%;
+    position: absolute;
+    /* top: -2px; */
+    transform: translate(8px, 8px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+  }
+  
+  .button-56:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  .button-56:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }
+  
+  
+  #description #title,
+  .newtask #description {
+    width: 80%; 
+    max-width: 600px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+  }
+  .newtask #title{
+    font-size: 16px;
+    padding: 10px;
+    transition: border-bottom-color 0.3s ease;
+    outline: none;
+    font-weight: bold;
+  }
+  
+  /* Styling for input fields when focused */
+  .newtask #title:focus,
+  .newtask #description:focus {
+    border-bottom-color: #007bff;
+  }
+  
+  .input-label {
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    color: #aaa;
+    font-size: 16px;
+    pointer-events: none;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Styling for textarea */
+  .newtask textarea {
+    width: 80%;
+    max-width: 600px;
+    height: 150px;
+    resize: none;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Styling for textarea when focused */
+  .newtask textarea:focus {
+    border-color: #007bff;
+  }
+  
+  
+  
+  
+  .button-group button, .button-group a{
+    border: 5px solid hsl(207, 75%, 41%);
+    border-radius: 5px;
+    background-color: #ff9900; /* Orange background color */
+    background-image: linear-gradient(45deg, #ff9900, #ff00cc); /* Gradient background */
+    padding: 10px 30px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  
